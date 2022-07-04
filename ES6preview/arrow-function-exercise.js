@@ -8,7 +8,6 @@ const inventory = [
 
 totalMachineValue = arr => {
     let sum = 0;
-    arr.forEach((value,index) => sum += value.value);
-    return sum;
+    arr.forEach((item) => sum += item.value);
 }
 console.log(totalMachineValue(inventory));
