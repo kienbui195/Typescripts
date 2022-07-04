@@ -20,5 +20,4 @@ const myObjects = [
     {x:   0, y:  0, width: 10, height:  5}
 ]
 
-
 console.log(detectCollision(myObjects, {x: 4, y: 2}))
