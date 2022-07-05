@@ -1,6 +1,5 @@
-replace = (array, from, to, elements) => {
-    array.splice.apply(array, [from, to - from].concat(elements))
-}
+replace = (array, from, to, elements) => array.splice.apply(array, [from, to - from].concat(elements))
+
 
 let testArray1 = [1, 2, 100, 100, 6]
 let testArray = [...testArray1]
