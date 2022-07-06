@@ -13,8 +13,8 @@ for (let i = 0; i < n; i++) {
     console.log(arrFibonacci);
 }
 
-arrFibonacci.forEach((item) => {
+for (const item of arrFibonacci) {
     sum += item;
-})
+}
 
 console.log(sum)
