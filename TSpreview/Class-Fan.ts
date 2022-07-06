@@ -1,11 +1,11 @@
 class Fan {
-    speed;
-    slow;
-    medium;
-    fast;
-    on;
-    radius;
-    color;
+    speed: number;
+    slow: number;
+    medium: number;
+    fast: number;
+    on: boolean;
+    radius: number;
+    color: string;
     constructor() {
         this.speed = this.slow;
         this.slow = 1;
