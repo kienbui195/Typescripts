@@ -4,7 +4,7 @@ var displayFibonacci = function (num) {
     return displayFibonacci(num - 1) + displayFibonacci(num - 2);
 };
 console.log(displayFibonacci(5));
-var n = 10;
+var n = 5;
 var sum = 0;
 var arrFibonacci = [];
 for (var i = 0; i < n; i++) {
