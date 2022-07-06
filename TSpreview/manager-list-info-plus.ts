@@ -48,7 +48,7 @@ class employeeList {
 let nv1 = new Employee('Nguyen Van A',Gender.male, new Date('2000-07-12'),'A@gmail.com','0123456');
 let nv2 = new Employee('Nguyen Van B',Gender.female, new Date('1995-01-26'),'B@gmail.com','0123434346');
 let nv3 = new Employee('Nguyen Van C',Gender.other, new Date('1999-12-12'),'C@gmail.com','0123456234234');
-console.log(nv1.displayEmployee());
+console.log(nv1.displayEmployee);
 let list = new employeeList();
 list.addEmployee(nv1);
 list.addEmployee(nv2);
