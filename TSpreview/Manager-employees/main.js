@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var EmployeeManager_1 = require("./EmployeeManager");
+var Employee_1 = require("./Employee");
+var staff1 = new Employee_1.Employee('Bui', 'Ken', new Date('2000-07-12'), 'Hanoi', Employee_1.Role.Director);
+var staff2 = new Employee_1.Employee('Phet', 'Tung', new Date('2001-06-10'), 'Thanhhoa', Employee_1.Role.Staff);
+var staff3 = new Employee_1.Employee('Luu', 'Thu', new Date('2001-09-12'), 'namdinh', Employee_1.Role.Manager);
+var list = new EmployeeManager_1.EmployeeManager();
+list.addEmployee(staff1);
+list.addEmployee(staff2);
+list.addEmployee(staff3);
+list.showAllList();
+list.showEmployeeInfo(1);
+list.updateEmployeeInfo(1, 'Bao', 'Tran', new Date('1999-12-12'), 'Namdinh', Employee_1.Role.Secretary);
+list.showAllList();
