@@ -1,6 +1,6 @@
 export class Circle {
-    color: string;
-    radius: number;
+    private color: string;
+    private radius: number;
 
     constructor(color: string, radius: number) {
         this.color = color;

@@ -1,7 +1,7 @@
 import {Circle} from "./circle-class";
 
 export class Cylinder extends Circle {
-    depth: number;
+    private depth: number;
 
     constructor(color: string, radius: number, depth: number) {
         super(color, radius);
