@@ -1,6 +1,6 @@
 export class Shape {
-    private color: string;
-    private filled: boolean;
+    protected color: string;
+    protected filled: boolean;
 
     constructor(color: string,filled: boolean) {
         this.color = color;

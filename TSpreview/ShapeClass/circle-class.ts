@@ -1,7 +1,7 @@
 import {Shape} from "./shape-class"
 
 export class Circle extends Shape {
-    private radius: number = 1.0;
+    protected radius: number = 1.0;
 
     constructor(color: string,filled: boolean, radius: number) {
         super(color, filled);

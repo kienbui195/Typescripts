@@ -1,9 +1,9 @@
 import {Shape} from "./shape-class";
 
 export  class Triangle extends Shape {
-    private side1: number;
-    private side2: number;
-    private side3: number;
+    protected side1: number;
+    protected side2: number;
+    protected side3: number;
 
     constructor(name: string,color: string,side1:number,side2:number,side3:number) {
         super(name, color);

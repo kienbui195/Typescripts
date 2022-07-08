@@ -1,8 +1,8 @@
 import {Shape}   from "./shape-class"
 
 export class Rectangle extends Shape {
-    private width: number = 1.0;
-    private length: number = 1.0;
+    protected width: number = 1.0;
+    protected length: number = 1.0;
 
     constructor(color: string,filled: boolean, width: number, length: number) {
         super(color, filled);
