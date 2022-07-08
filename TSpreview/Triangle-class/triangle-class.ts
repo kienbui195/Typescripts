@@ -33,4 +33,7 @@ export  class Triangle extends Shape {
     getPerimeter(): number {
         return this.side3+this.side2+this.side1;
     }
+    getArea(): number {
+        return Math.pow(this.getPerimeter()*((this.getPerimeter()-this.side1)*(this.getPerimeter()-this.side2)*(this.getPerimeter()-this.side3)),0.5);
+    }
 }
