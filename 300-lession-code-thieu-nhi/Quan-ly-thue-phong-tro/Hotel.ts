@@ -31,24 +31,24 @@ export class Hotel {
     setPrice(value) {
         this._price = value;
     }
-    getInfoCustomer(): object {
-        return {
-            name: this._person.getName(),
-            birthday: this._person.getBirthday(),
-            ID: this._person.getIdNo()
-        }
+    getCustomerInfo(): any {
+        return this._person;
     }
-    setInfoCustomer(name: string, birthday: string, id: number) {
+    setCustomerInfo(name: string,birthday: string, idno: number) {
         this._person.setName(name);
         this._person.setBirthday(birthday);
-        this._person.setIdNo(id);
+        this._person.setIdNo(idno);
     }
-    showInfoCustomer(): object {
-        return {
-            NumberOfDays : this.getNumberOfDays(),
-            TypeOfRoom: this.getTypeOfRoom(),
-            Price: this.getPrice(),
-            Customer: this.getInfoCustomer()
-        }
+    getIdOfCustomer(): number {
+        return this._person.getIdNo();
+    }
+    setNameOfCustomer(name: string) {
+        this._person.setName(name);
+    }
+    setBirthdayOfCustomer(day: string) {
+        this._person.setBirthday(day);
+    }
+    setIdOfCustomer(id: number) {
+        this._person.setIdNo(id);
     }
 }
