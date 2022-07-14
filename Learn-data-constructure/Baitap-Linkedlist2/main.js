@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var ManagerList_1 = require("./ManagerList");
+var StaffSalary_1 = require("./StaffSalary");
+var list = new ManagerList_1.ManagerList();
+list.insertFirst(StaffSalary_1.Month.Bon, 3000);
+list.insertLast(StaffSalary_1.Month.Hai, 5000);
+list.insertLast(StaffSalary_1.Month.Ba, 8000);
+list.insertLast(StaffSalary_1.Month.Chin, 9000);
+list.insertLast(StaffSalary_1.Month.Muoi, 3500);
+console.log(list.showInfo());
+console.log("Tong luong: ".concat(list.totalSalary()));
+console.log("THang luong cao nhat: ".concat(list.findMonthHighestSalary()));
