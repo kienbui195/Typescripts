@@ -1,4 +1,4 @@
-import {Queue} from "./Quece";
+import {Queue} from "./Queue";
 
 let queue = new Queue<number>();
 queue.enqueue(1);
