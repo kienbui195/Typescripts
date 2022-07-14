@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var ManagerList_1 = require("./ManagerList");
+var list = new ManagerList_1.ManagerList();
+list.insertFirst('Tung', 10);
+list.insertLast('Thu', 4);
+list.insertLast('Kien', 8);
+console.log(list.showList());
+console.log("Tong sinh vien truot mon: ".concat(list.totalStudentFail()));
+console.log("Danh sach sinh vien diem cao nhat: ".concat(list.listStudentMaxScore()));
+list.findByName('Kien');
