@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var ListPatient_1 = require("./ListPatient");
+var list = new ListPatient_1.ListPatient();
+list.enqueue('Smith', 5);
+list.enqueue('Jones', 4);
+list.enqueue('Fehrenbach', 6);
+list.enqueue('Brown', 1);
+list.enqueue('Ingram', 1);
+console.table("Danh sach benh nhan: ".concat(list.data));
+console.log("Ten benh nhan duoc kham dau: ".concat(list.dequeue()));
+console.table("Danh sach benh nhan con lai: ".concat(list.data));
+console.log("Ten benh nhan duoc kham tiep: ".concat(list.dequeue()));
+console.table("Danh sach benh nhan con lai: ".concat(list.data));
+console.table(list.data);
