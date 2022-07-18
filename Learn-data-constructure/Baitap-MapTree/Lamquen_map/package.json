@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "downlevelIteration": true,
+    "target": "es6"
+  
+  }
+}
