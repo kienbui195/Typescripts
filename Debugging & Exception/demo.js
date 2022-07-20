@@ -9,8 +9,6 @@
 // } catch(e) {
 //     console.log("Error : " + e);
 // }
-
-
 // try{
 //     ab();
 //     // We have not declared the
@@ -18,10 +16,9 @@
 // } catch(e){
 //     console.log("Error : "+ e.name);
 // }
-
 try {
     eval("alert('ES6 Exception Handling)");
-} catch(e){
-    console.log("Error : " + e.name)
 }
-
+catch (e) {
+    console.log("Error : " + e.name);
+}
